@@ -7,8 +7,8 @@ function Ground() {
 
   return(
     <>
-    <mesh rotation={[angleToRadians(-90),0,0]} receiveShadow castShadow>
-        <planeGeometry args={[30,30]}/>
+    <mesh position={[3,0,0]} rotation={[angleToRadians(-90),0,0]} receiveShadow castShadow>
+        <planeGeometry args={[18,10]}/>
         <MeshReflectorMaterial
           color={[0.015, 0.015, 0.015]}
           roughness={0.7}

@@ -21,8 +21,8 @@ function ThreeHomeinner() {
 
   return(
     <>
-        <PerspectiveCamera makeDefault position={[3, 0, 6]} fov={50}/>
-        <OrbitControls ref={orbitControlsRef} target={[0, 1, 0]} maxPolarAngle={1.6} minPolarAngle={1}/>
+        <PerspectiveCamera makeDefault position={[3, 0, 6]} fov={60}/>
+        <OrbitControls ref={orbitControlsRef} target={[0, 1, 0]} maxPolarAngle={1.6} minPolarAngle={1} enableZoom={false}/>
       
       <Environment background>
       <mesh>
