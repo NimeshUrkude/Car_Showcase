@@ -2,28 +2,17 @@ import React, { Suspense} from "react";
 import "./threehomestyle.css"
 import { Canvas} from "@react-three/fiber";
 import Homethreeinner from "./threehomeinner.jsx";
-import {isBrowser, isMobile } from 'react-device-detect';
 
 function ThreeHome() {
-  if(isBrowser){
-    return(
-      <div className="div">
-        <Suspense fallback={<Loading/>}>
-          <Canvas className="canvas_div" shadows={true}>
-            <Homethreeinner/>
-          </Canvas>
-        </Suspense>
-      </div>
-    )
-  }
-  else{
-    return(
-      <div className="div">
-        <h1>Destop View Only</h1>
-      </div>
-    )
-  }
-
+  return(
+    <div className="div">
+      <Suspense fallback={<Loading/>}>
+        <Canvas className="canvas_div" shadows={true}>
+          <Homethreeinner/>
+        </Canvas>
+      </Suspense>
+    </div>
+  )
 }
 
 function Loading(){
