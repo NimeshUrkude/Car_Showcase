@@ -2,7 +2,7 @@ import React, { Suspense} from "react";
 import "./threehomestyle.css"
 import { Canvas} from "@react-three/fiber";
 import Homethreeinner from "./threehomeinner.jsx";
-import {isBrowser, isMobile } from 'react-device-detect';
+import {isBrowser} from 'react-device-detect';
 
 function ThreeHome() {
   if(isBrowser){
