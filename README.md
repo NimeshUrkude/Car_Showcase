@@ -1,6 +1,6 @@
 # Car Showcase
 
-This Repository is of Frontend for Car Showcase Website build on React and React Three Fiber  .
+This repository is a collection of frontend components for a car showcase website built on React and React Three Fiber.It is hosted on Github.
 
 Frontend Link : https://nimeshurkude.github.io/Car_Showcase/
 
